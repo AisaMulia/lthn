@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Solusi Bangun Indonesia | Inventory Management</title>
+    <meta
+      name="description"
+      content="Prototype website sistem informasi pengelolaan persediaan barang PT Solusi Bangun Indonesia Tbk, Cilacap."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page" id="top">
+      <header class="site-header">
+        <nav class="navbar container">
+          <a href="#top" class="brand" aria-label="Beranda PT Solusi Bangun Indonesia">
+            <span class="brand-mark">SBI</span>
+            <span class="brand-text">PT Solusi Bangun Indonesia</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu">
+            <a href="#home">Beranda</a>
+            <a href="#profil">Profil Perusahaan</a>
+            <a href="#sistem">Sistem Informasi</a>
+            <a href="#fitur">Fitur</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+            <button class="btn btn-primary login-trigger" type="button">Login</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero section">
+          <div class="container hero-layout">
+            <div class="hero-copy">
+              <span class="eyebrow">Industrial Operations Support</span>
+              <h1>Integrated Spare Parts Inventory Management</h1>
+              <p>
+                Sistem informasi yang membantu pemeliharaan, gudang, dan pengadaan
+                mengelola ketersediaan suku cadang mesin industri secara lebih
+                aman, cepat, dan terintegrasi.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#sistem">Jelajahi Sistem</a>
+                <button class="btn btn-secondary login-trigger" type="button">Login Sistem</button>
+              </div>
+              <div class="hero-pills">
+                <span>Stock On Hand</span>
+                <span>ROP Monitoring</span>
+                <span>Purchase Coordination</span>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="image-card main-card">
+                <img
+                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80"
+                  alt="Area pabrik dan mesin industri"
+                />
+              </div>
+              <div class="mini-stat stat-one">
+                <span class="mini-label">Barang Aman</span>
+                <strong>87%</strong>
+                <small>Periode saat ini</small>
+              </div>
+              <div class="mini-stat stat-two">
+                <span class="mini-label">Kebutuhan ROP</span>
+                <strong>12 Item</strong>
+                <small>Perlu review</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="profil" class="section section-alt">
+          <div class="container two-column">
+            <div class="content-block">
+              <span class="eyebrow">Profil Perusahaan</span>
+              <h2>Peran pemeliharaan dan persediaan dalam menjaga kelancaran produksi</h2>
+              <p>
+                PT Solusi Bangun Indonesia Tbk, Cilacap beroperasi di lingkungan
+                industri yang sangat bergantung pada mesin utama, perawatan rutin,
+                serta ketersediaan suku cadang yang tepat waktu. Setiap keterlambatan
+                dalam pemeliharaan dapat berdampak pada jadwal produksi dan efisiensi
+                operasional secara keseluruhan.
+              </p>
+              <p>
+                Oleh karena itu, kebutuhan akan data stok, riwayat penggunaan, serta
+                pengadaan barang harus dikelola secara terintegrasi agar perusahaan bisa
+                merespons kebutuhan operasional dengan cepat dan terukur.
+              </p>
+            </div>
+
+            <div class="image-panel">
+              <img
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80"
+                alt="Lingkungan pabrik semen dan mesin industri"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading center">
+              <span class="eyebrow">Latar Belakang dan Permasalahan</span>
+              <h2>Masalah klasik yang sering menghambat inventori pabrik</h2>
+            </div>
+
+            <div class="info-grid four-col">
+              <article class="info-card danger">
+                <div class="card-icon">⚠</div>
+                <h3>Downtime mesin</h3>
+                <p>Suku cadang tidak tersedia saat perbaikan utama dibutuhkan.</p>
+              </article>
+              <article class="info-card warning">
+                <div class="card-icon">📦</div>
+                <h3>Overstock</h3>
+                <p>Persediaan melampaui kebutuhan, meningkatkan biaya penyimpanan.</p>
+              </article>
+              <article class="info-card neutral">
+                <div class="card-icon">📝</div>
+                <h3>Pencatatan terlambat</h3>
+                <p>Data penggunaan dan stok sering tidak tercatat secara real time.</p>
+              </article>
+              <article class="info-card neutral">
+                <div class="card-icon">🔄</div>
+                <h3>Data tak terintegrasi</h3>
+                <p>Kebutuhan, stok, dan pengadaan belum terhubung dalam satu alur.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="sistem" class="section section-alt">
+          <div class="container">
+            <div class="section-heading center">
+              <span class="eyebrow">Pengenalan Sistem Informasi</span>
+              <h2>Alur kerja yang menghubungkan kebutuhan, stok, dan pengadaan</h2>
+            </div>
+
+            <div class="flow-diagram">
+              <div class="flow-step"><span>Permintaan Barang</span></div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step"><span>Pemeriksaan Stok</span></div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step"><span>Stock Out</span></div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step"><span>Pengajuan Pengadaan</span></div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step"><span>Pemesanan Pemasok</span></div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step"><span>Stock In</span></div>
+            </div>
+
+            <div class="role-grid">
+              <div class="role-card">
+                <h3>Staff Pemeliharaan</h3>
+                <p>Mencatat kebutuhan bagian, penggunaan suku cadang, dan status perbaikan mesin.</p>
+              </div>
+              <div class="role-card">
+                <h3>Staff Gudang</h3>
+                <p>Memantau stok, memproses stock in dan stock out, serta memicu alert persediaan.</p>
+              </div>
+              <div class="role-card">
+                <h3>Staff Pengadaan</h3>
+                <p>Menilai kebutuhan barang, membuat pesanan pembelian, dan memantau status pengadaan.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="fitur" class="section">
+          <div class="container">
+            <div class="section-heading center">
+              <span class="eyebrow">Fitur Utama</span>
+              <h2>Setiap modul dirancang untuk mendukung keputusan operasional</h2>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card"><h3>Dashboard Persediaan</h3></article>
+              <article class="feature-card"><h3>Data Barang & Kategori</h3></article>
+              <article class="feature-card"><h3>Stock On Hand</h3></article>
+              <article class="feature-card"><h3>Transaksi Stock In</h3></article>
+              <article class="feature-card"><h3>Transaksi Stock Out</h3></article>
+              <article class="feature-card"><h3>Riwayat Penggunaan</h3></article>
+              <article class="feature-card"><h3>Permintaan Kebutuhan</h3></article>
+              <article class="feature-card"><h3>Pengadaan & PO</h3></article>
+              <article class="feature-card"><h3>Manajemen Pemasok</h3></article>
+              <article class="feature-card"><h3>Safety Stock & ROP</h3></article>
+              <article class="feature-card"><h3>System Alert</h3></article>
+              <article class="feature-card"><h3>Laporan Persediaan</h3></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="galeri" class="section section-alt">
+          <div class="container">
+            <div class="section-heading center">
+              <span class="eyebrow">Galeri Foto dan Video</span>
+              <h2>Lingkungan kerja, mesin, dan gudang pendukung operasional</h2>
+            </div>
+
+            <div class="gallery-grid">
+              <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" aria-label="Lihat gambar pabrik">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Pabrik dan lingkungan industri" />
+              </button>
+              <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=900&q=80" aria-label="Lihat gambar mesin industri">
+                <img src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=900&q=80" alt="Mesin industri" />
+              </button>
+              <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80" aria-label="Lihat gambar gudang suku cadang">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80" alt="Gudang suku cadang" />
+              </button>
+              <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=80" aria-label="Lihat gambar proses pemeliharaan">
+                <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=80" alt="Proses pemeliharaan" />
+              </button>
+            </div>
+
+            <div class="video-grid">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a1f7?auto=format&fit=crop&w=900&q=80" alt="Thumbnail video industrial" />
+                  <button class="video-play" type="button" data-video="https://www.w3schools.com/html/mov_bbb.mp4">▶</button>
+                </div>
+                <h3>Proses Industri dan Pemeliharaan</h3>
+                <p>Video demonstrasi untuk menggambarkan aktivitas mesin dan kebutuhan suku cadang.</p>
+              </div>
+
+              <div class="video-card placeholder">
+                <div class="video-thumb placeholder-box">
+                  <div class="placeholder-label">Video Placeholder</div>
+                </div>
+                <h3>Video Perusahaan</h3>
+                <p>Gunakan tautan resmi atau embed sesuai kebutuhan untuk mengganti placeholder ini.</p>
+                <button class="btn btn-secondary" type="button" disabled>Belum Tersedia</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="lokasi" class="section">
+          <div class="container single-column-map">
+            <div class="section-heading center">
+              <span class="eyebrow">Lokasi dan Google Maps</span>
+              <h2>PT Solusi Bangun Indonesia Tbk, Cilacap</h2>
+            </div>
+
+            <div class="map-layout">
+              <div class="map-panel">
+                <iframe
+                  title="Google Maps PT Solusi Bangun Indonesia Cilacap"
+                  src="https://www.google.com/maps?q=Cilacap%20Indonesia&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="location-card">
+                <img
+                  src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=900&q=80"
+                  alt="Lingkungan pabrik dan area perusahaan"
+                />
+                <a class="btn btn-primary" href="https://www.google.com/maps/search/Cilacap+Indonesia" target="_blank" rel="noreferrer">
+                  Buka di Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="kontak" class="section contact-section section-alt">
+          <div class="container contact-layout">
+            <div>
+              <span class="eyebrow">Kontak</span>
+              <h2>Hubungkan kebutuhan operasional dengan eksekusi yang cepat</h2>
+              <p>
+                Website ini dibuat sebagai prototype front-end untuk menggambarkan alur
+                kerja sistem informasi persediaan. Data yang ditampilkan merupakan simulasi
+                dan bukan sistem operasional asli perusahaan.
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <ul>
+                <li><strong>Perusahaan</strong><span>PT Solusi Bangun Indonesia Tbk</span></li>
+                <li><strong>Lokasi</strong><span>Cilacap, Jawa Tengah</span></li>
+                <li><strong>Situs Resmi</strong><a href="https://www.solusibangunindonesia.com/" target="_blank" rel="noreferrer">www.solusibangunindonesia.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-layout">
+          <div>
+            <h3>SBI Inventory System</h3>
+            <p>Prototype dashboard simulasi untuk pengelolaan persediaan barang industri.</p>
+          </div>
+          <div>
+            <h4>Navigasi</h4>
+            <ul>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#profil">Profil</a></li>
+              <li><a href="#fitur">Fitur</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Prinsip Desain</h4>
+            <ul>
+              <li>User familiarity</li>
+              <li>Consistency</li>
+              <li>Feedback</li>
+              <li>Visibility</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Prototype Front-End. Semua data bersifat simulasi.</div>
+      </footer>
+    </div>
+
+    <div id="authModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close="authModal"></div>
+      <div class="modal-panel auth-panel" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <button class="close-button" type="button" data-close="authModal" aria-label="Tutup login">×</button>
+        <div class="auth-header">
+          <span class="brand-mark small">SBI</span>
+          <h2 id="loginTitle">Login Sistem</h2>
+        </div>
+
+        <p class="demo-note">Akun demo untuk prototipe front-end. Password hanya contoh simulasi.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="field-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Masukkan username" />
+          </div>
+
+          <div class="field-group password-wrap">
+            <label for="password">Password</label>
+            <div class="password-field">
+              <input id="password" name="password" type="password" placeholder="Masukkan password" />
+              <button type="button" class="toggle-password" aria-label="Tampilkan password">Show</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option value="">Pilih role</option>
+              <option value="maintenance">Staff Pemeliharaan</option>
+              <option value="warehouse">Staff Gudang</option>
+              <option value="procurement">Staff Pengadaan</option>
+            </select>
+          </div>
+
+          <div id="loginError" class="form-error" aria-live="polite"></div>
+
+          <button class="btn btn-primary full-width" type="submit">Login</button>
+          <button class="btn btn-secondary full-width back-home" type="button">Kembali ke Beranda</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="dashboardApp" class="dashboard hidden">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-mark small">SBI</span>
+          <div>
+            <strong>SBI Inventory</strong>
+            <small>Demo System</small>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <button class="nav-item active" type="button" data-section="overview">Ringkasan</button>
+          <button class="nav-item" type="button" data-section="maintenanceSection">Pemeliharaan</button>
+          <button class="nav-item" type="button" data-section="warehouseSection">Gudang</button>
+          <button class="nav-item" type="button" data-section="procurementSection">Pengadaan</button>
+          <button class="nav-item" type="button" data-section="inventoryTablePanel">Barang</button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="btn btn-secondary full-width" type="button" id="logoutBtn">Logout</button>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div>
+            <p class="section-kicker">Dashboard</p>
+            <h2 id="dashboardTitle">Selamat Datang</h2>
+          </div>
+          <div class="user-meta">
+            <div class="user-badge">
+              <span id="userName">User</span>
+              <small id="userRole">Role</small>
+            </div>
+            <button class="notification-button" type="button" aria-label="Notifikasi">🔔 <span id="notificationCount">0</span></button>
+          </div>
+        </header>
+
+        <section id="overview" class="dashboard-section">
+          <div class="summary-grid">
+            <article class="summary-card">
+              <span>Total Barang</span>
+              <strong id="totalItems">0</strong>
+              <small>Master data</small>
+            </article>
+            <article class="summary-card safe">
+              <span>Barang Aman</span>
+              <strong id="safeItems">0</strong>
+              <small>Inventory healthy</small>
+            </article>
+            <article class="summary-card warning">
+              <span>ROP</span>
+              <strong id="ropItems">0</strong>
+              <small>Perlu pemesanan</small>
+            </article>
+            <article class="summary-card danger">
+              <span>Di Bawah Minimum</span>
+              <strong id="belowMinItems">0</strong>
+              <small>Perhatian</small>
+            </article>
+            <article class="summary-card critical">
+              <span>Out of Stock</span>
+              <strong id="outOfStockItems">0</strong>
+              <small>Stok habis</small>
+            </article>
+          </div>
+
+          <div class="overview-grid">
+            <div class="panel chart-panel">
+              <div class="panel-head">
+                <h3>Ringkasan Persediaan</h3>
+              </div>
+              <div id="inventoryChart" class="inventory-chart" aria-label="Grafik stok"></div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Aktivitas Terbaru</h3>
+              </div>
+              <ul id="latestTransactions" class="activity-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="inventoryTablePanel" class="dashboard-section hidden-section">
+          <div class="panel">
+            <div class="panel-head table-head">
+              <h3>Daftar Barang</h3>
+              <div class="toolbar">
+                <input id="inventorySearch" type="search" placeholder="Cari barang..." aria-label="Cari barang" />
+                <select id="inventoryFilter" aria-label="Filter status">
+                  <option value="all">Semua</option>
+                  <option value="safe">Aman</option>
+                  <option value="rop">ROP</option>
+                  <option value="below-minimum">Di bawah minimum</option>
+                  <option value="out-of-stock">Out of stock</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Barang</th>
+                    <th>Kategori</th>
+                    <th>SOH</th>
+                    <th>Safety</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>ROP</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="inventoryTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="maintenanceSection" class="dashboard-section hidden-section">
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>Input Data Perbaikan Mesin</h3>
+            </div>
+            <form id="maintenanceForm" class="stack-form" novalidate>
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="machineSelect">Mesin</label>
+                  <select id="machineSelect" name="machine" required>
+                    <option value="Kiln">Kiln</option>
+                    <option value="Mill">Mill</option>
+                    <option value="Conveyor">Conveyor</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="workOrder">Nomor Pekerjaan</label>
+                  <input id="workOrder" name="workOrder" type="text" placeholder="PB-2045" required />
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="maintenanceItem">Nama Barang</label>
+                  <select id="maintenanceItem" name="maintenanceItem" required></select>
+                </div>
+                <div class="field-group">
+                  <label for="maintenanceQty">Jumlah Digunakan</label>
+                  <input id="maintenanceQty" name="maintenanceQty" type="number" min="1" step="1" value="1" required />
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="maintenanceDate">Tanggal</label>
+                  <input id="maintenanceDate" name="maintenanceDate" type="date" required />
+                </div>
+                <div class="field-group">
+                  <label for="maintenanceStatus">Status Permintaan</label>
+                  <select id="maintenanceStatus" name="maintenanceStatus">
+                    <option value="Tersedia">Tersedia</option>
+                    <option value="Butuh Restock">Butuh Restock</option>
+                    <option value="Menunggu Persetujuan">Menunggu Persetujuan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="maintenanceDesc">Deskripsi Perbaikan</label>
+                <textarea id="maintenanceDesc" name="maintenanceDesc" rows="3" placeholder="Jelaskan kegiatan perbaikan dan kebutuhan suku cadang"></textarea>
+              </div>
+
+              <div id="maintenanceError" class="form-error" aria-live="polite"></div>
+              <button class="btn btn-primary" type="submit">Simpan Data Penggunaan</button>
+            </form>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Riwayat Penggunaan Barang</h3>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Mesin</th>
+                    <th>Pekerjaan</th>
+                    <th>Barang</th>
+                    <th>Qty</th>
+                    <th>Tanggal</th>
+                  </tr>
+                </thead>
+                <tbody id="maintenanceTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="warehouseSection" class="dashboard-section hidden-section">
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>Master Data Barang</h3>
+            </div>
+            <div class="table-wrap compact">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Barang</th>
+                    <th>SOH</th>
+                    <th>Safety</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>ROP</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="warehouseTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>Transaksi Persediaan</h3>
+            </div>
+
+            <div class="stack-form">
+              <form id="stockInForm" novalidate>
+                <h4>Stock In</h4>
+                <div class="field-grid">
+                  <div class="field-group">
+                    <label for="stockInItem">Barang</label>
+                    <select id="stockInItem" required></select>
+                  </div>
+                  <div class="field-group">
+                    <label for="stockInQty">Jumlah</label>
+                    <input id="stockInQty" type="number" min="1" step="1" value="1" required />
+                  </div>
+                </div>
+                <div class="field-group">
+                  <label for="stockInNotes">Catatan</label>
+                  <input id="stockInNotes" type="text" placeholder="Penerimaan dari pemasok" />
+                </div>
+                <button class="btn btn-primary" type="submit">Catat Stock In</button>
+              </form>
+
+              <form id="stockOutForm" novalidate>
+                <h4>Stock Out</h4>
+                <div class="field-grid">
+                  <div class="field-group">
+                    <label for="stockOutItem">Barang</label>
+                    <select id="stockOutItem" required></select>
+                  </div>
+                  <div class="field-group">
+                    <label for="stockOutQty">Jumlah</label>
+                    <input id="stockOutQty" type="number" min="1" step="1" value="1" required />
+                  </div>
+                </div>
+                <div class="field-group">
+                  <label for="stockOutNotes">Catatan</label>
+                  <input id="stockOutNotes" type="text" placeholder="Pemakaian perbaikan, pengiriman, dll." />
+                </div>
+                <button class="btn btn-secondary" type="submit">Catat Stock Out</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>System Alert</h3>
+            </div>
+            <ul id="alertList" class="alert-list"></ul>
+          </div>
+        </section>
+
+        <section id="procurementSection" class="dashboard-section hidden-section">
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>Permintaan Barang</h3>
+            </div>
+            <div class="table-wrap compact">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Barang</th>
+                    <th>Qty</th>
+                    <th>Departemen</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="requestTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel multi-panel">
+            <div class="panel-head">
+              <h3>Form Pesanan Pembelian</h3>
+            </div>
+            <form id="purchaseOrderForm" class="stack-form" novalidate>
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="poNumber">Nomor Pesanan</label>
+                  <input id="poNumber" type="text" placeholder="PO-2026-001" required />
+                </div>
+                <div class="field-group">
+                  <label for="poDate">Tanggal</label>
+                  <input id="poDate" type="date" required />
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="poSupplier">Pemasok</label>
+                  <select id="poSupplier" required></select>
+                </div>
+                <div class="field-group">
+                  <label for="poItem">Barang</label>
+                  <select id="poItem" required></select>
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="poQty">Jumlah</label>
+                  <input id="poQty" type="number" min="1" step="1" value="1" required />
+                </div>
+                <div class="field-group">
+                  <label for="poStatus">Status Pesanan</label>
+                  <select id="poStatus">
+                    <option value="Draft">Draft</option>
+                    <option value="Menunggu Persetujuan">Menunggu Persetujuan</option>
+                    <option value="Dipesan">Dipesan</option>
+                    <option value="Diterima">Diterima</option>
+                    <option value="Dibatalkan">Dibatalkan</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Buat Pesanan</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Tutup galeri">×</button>
+      <img id="lightboxImage" src="" alt="Gambar galeri" />
+    </div>
+
+    <div id="videoModal" class="video-modal hidden" aria-hidden="true">
+      <div class="video-backdrop" data-close="videoModal"></div>
+      <div class="video-frame" role="dialog" aria-modal="true" aria-label="Pemutar video">
+        <button class="close-button" type="button" data-close="videoModal" aria-label="Tutup video">×</button>
+        <video id="videoPlayer" controls playsinline></video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
